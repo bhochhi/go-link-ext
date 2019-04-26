@@ -8,5 +8,7 @@ chrome.omnibox.onInputEntered.addListener(
     console.log('==>',text)
     // Encode user input for special characters , / ? : @ & = + $ #
     var newURL = 'http://go/' + encodeURIComponent(text);
-    chrome.tabs.update({ url: newURL });
+    chrome.tabs.create({ url: newURL });
   });
+
+
