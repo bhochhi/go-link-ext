@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "http://go/",
+  "description": "Type 'go ' then link word you want to open.",
+  "version": "0.0.1",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "omnibox": { "keyword" : "go" },
+  "browser_action": {
+    "default_icon": {
+      "16": "favicon.png"
+      }
+  }
+}
